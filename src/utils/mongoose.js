@@ -11,7 +11,7 @@ export async function dbConnect() {
   }
 
   const db = await connect(
-    process.env.MONGODB_URI || "mongodb://localhost:27017/nextjs" || "mongodb://my-nextmongo-cluster.cluster-cfqoee6ueqrd.us-east-2.docdb.amazonaws.com:27017/next-js"
+    process.env.MONGODB_URI || "mongodb://localhost:27017/nextjs"
   );
   // console.log(db.connection.db.databaseName);
   conn.isConnected = db.connections[0].readyState;
