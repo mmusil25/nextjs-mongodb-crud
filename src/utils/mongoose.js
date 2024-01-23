@@ -1,6 +1,6 @@
 import { connect, connection } from "mongoose";
 
-var mydb = "mongodb://mongodb:helloworld@my-nextmongo-cluster.cluster-cfqoee6ueqrd.us-east-2.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"
+var mydb = "mongodb://mongodb:helloworld@my-nextmongo-cluster.cluster-cfqoee6ueqrd.us-east-2.docdb.amazonaws.com:27017/"
 
 const conn = {
   isConnected: false,
