@@ -1,5 +1,6 @@
 import { connect, connection } from "mongoose";
 
+var mydb = "mongodb://mongodb:<insertYourPassword>@my-nextmongo-cluster.cluster-cfqoee6ueqrd.us-east-2.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"
 
 const conn = {
   isConnected: false,
@@ -11,7 +12,7 @@ export async function dbConnect() {
   }
 
   const db = await connect(
-    process.env.MONGODB_URI || "mongodb://localhost:27017/nextjs"
+    process.env.MONGODB_URI || mydb //"mongodb://localhost:27017/nextjs"
   );
   // console.log(db.connection.db.databaseName);
   conn.isConnected = db.connections[0].readyState;
