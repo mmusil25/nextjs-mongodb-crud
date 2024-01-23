@@ -1,6 +1,6 @@
 import { connect, connection } from "mongoose";
 
-var mydb = "mongodb://mongodb:helloworld@my-nextmongo-cluster.cluster-cfqoee6ueqrd.us-east-2.docdb.amazonaws.com:27017/"
+var mydb = "mongodb://mongodb:helloworld@my-nextmongo-cluster.cluster-cfqoee6ueqrd.us-east-2.docdb.amazonaws.com:27017/nextjs"
 
 const conn = {
   isConnected: false,
